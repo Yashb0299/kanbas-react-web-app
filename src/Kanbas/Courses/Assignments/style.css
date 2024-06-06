@@ -1,0 +1,11 @@
+.weight-box {
+    background-color: #C7CDD1;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 3px 10px;
+    margin-right: 5px;
+    display: inline-block;
+}
+.list-group-item-border-left {
+    border-left: 5px solid green !important
+}

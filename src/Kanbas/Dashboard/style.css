@@ -1,0 +1,35 @@
+.wd-dashboard-course {
+    width: 262px;
+}
+.card {
+    height: 257px;
+    display: flex;
+}
+.card img {
+    height: 146px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card-body {
+    padding: 10px;
+}
+.wd-dashboard-course-link {
+    color: navy;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.course-title {
+    background-color: white;
+    color: navy;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 2px;
+}
+.btn-small {
+    margin-top: 1px;
+    padding: 5px 8px;
+
+}

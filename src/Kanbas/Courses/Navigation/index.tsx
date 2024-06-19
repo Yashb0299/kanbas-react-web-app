@@ -1,33 +1,23 @@
-import './index.css';
-import React, { useState } from 'react';
+import "./index.css"
 export default function CoursesNavigation() {
-    const [activeItem, setActiveItem] = useState('Home');
-    const navigationItems = [
-        { id: 'home', label: 'Home', path: 'Home' },
-        { id: 'modules', label: 'Modules', path: 'Modules' },
-        { id: 'piazza', label: 'Piazza', path: 'Piazza' },
-        { id: 'zoom', label: 'Zoom', path: 'Zoom' },
-        { id: 'assignments', label: 'Assignments', path: 'Assignments' },
-        { id: 'quizzes', label: 'Quizzes', path: 'Quizzes' },
-        { id: 'grades', label: 'Grades', path: 'Grades' }
-    ];
-    const handleSetActive = (item: string) => {
-        setActiveItem(item);
-    };
-    const getItemClass = (itemName: string) => {
-        return `list-group-item border border-0 ${activeItem === itemName ? 'active' : 'text-danger'}`;
-    };
     return (
         <div id="wd-courses-navigation" className="list-group fs-5 rounded-0">
-            {navigationItems.map((item) => (
-                <a key={item.id}
-                   id={`wd-course-${item.id}-link`}
-                   href={`#/Kanbas/Courses/5010/${item.path}`}
-                   className={getItemClass(item.label)}
-                   onClick={() => handleSetActive(item.label)}>
-                    {item.label}
-                </a>
-            ))}
+            <a id="wd-course-home-link"
+               href={"#/Kanbas/Courses/5010/Home"} className="list-group-item active border border-0">Home
+            </a>
+            <a id="wd-course-modules-link" href={"#/Kanbas/Courses/1234/Modules"} className="list-group-item text-danger border border-0">Modules
+            </a>
+            <a id="wd-course-piazza-link"
+               href={"#/Kanbas/Courses/5010/Piazza"} className="list-group-item text-danger border border-0">Piazza</a>
+            <a id="wd-course-zoom-link"
+               href={"#/Kanbas/Courses/5010/Zoom"} className="list-group-item text-danger border border-0">Zoom</a>
+            <a id="wd-course-quizzes-link" href={"#/Kanbas/Courses/5010/Assignments"} className="list-group-item text-danger border border-0">Assignments
+            </a>
+            <a id="wd-course-assignments-link" href={"#/Kanbas/Courses/5010/Quizzes"} className="list-group-item text-danger border border-0">Quizzes
+            </a>
+            <a id="wd-course-grades-link"
+               href={"#/Kanbas/Courses/5010/Grades"} className="list-group-item text-danger border border-0">Grades
+            </a>
         </div>
     );
 }

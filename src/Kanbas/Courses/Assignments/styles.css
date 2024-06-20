@@ -1,0 +1,14 @@
+.wd-float-left {
+    float:left;
+}
+.wd-float-right{
+    float:right;
+    height:100px;
+}
+.wd-color1 {
+    background-color: red;
+    color: white;
+}
+#wd-modules1 {
+    border-left:5px solid green;
+}

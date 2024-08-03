@@ -1,116 +1,514 @@
 [
-    {
-        "_id": "M101",
-        "name": "Introduction to Rocket Propulsion",
-        "description": "Basic principles of rocket propulsion and rocket engines.",
-        "course": "RS101",
-        "lessons": [
-            {
-                "_id": "L101",
-                "name": "History of Rocketry",
-                "description": "A brief history of rocketry and space exploration.",
-                "module": "M101"
-            },
-            {
-                "_id": "L102",
-                "name": "Rocket Propulsion Fundamentals",
-                "description": "Basic principles of rocket propulsion.",
-                "module": "M101"
-            },
-            {
-                "_id": "L103",
-                "name": "Rocket Engine Types",
-                "description": "Overview of different types of rocket engines.",
-                "module": "M101"
-            }
-        ]
-    },
-    {
-        "_id": "M102",
-        "name": "Fuel and Combustion",
-        "description": "Understanding rocket fuel, combustion processes, and efficiency.",
-        "course": "RS101",
-        "lessons": [
-            {
-                "_id": "L201",
-                "name": "Rocket Fuel",
-                "description": "Overview of different types of rocket fuels.",
-                "module": "M102"
-            },
-            {
-                "_id": "L202",
-                "name": "Combustion Processes",
-                "description": "Understanding combustion processes and efficiency.",
-                "module": "M102"
-            },
-            {
-                "_id": "L203",
-                "name": "Combustion Instability",
-                "description": "Understanding combustion instability and mitigation.",
-                "module": "M102"
-            }
-        ]
-    },
-    {
-        "_id": "M103",
-        "name": "Nozzle Design",
-        "description": "Principles of rocket nozzle design and performance optimization.",
-        "course": "RS101",
-        "lessons": [
-            {
-                "_id": "L301",
-                "name": "Nozzle Design",
-                "description": "Overview of different types of rocket nozzles.",
-                "module": "M103"
-            },
-            {
-                "_id": "L302",
-                "name": "Nozzle Performance",
-                "description": "Understanding nozzle performance and efficiency.",
-                "module": "M103"
-            },
-            {
-                "_id": "L303",
-                "name": "Nozzle Optimization",
-                "description": "Optimizing nozzle design for specific applications.",
-                "module": "M103"
-            }
-        ]
-    },
-    {
-        "_id": "M201",
-        "name": "Fundamentals of Aerodynamics",
-        "description": "Basic aerodynamic concepts and fluid dynamics principles.",
-        "course": "RS102"
-    },
-    {
-        "_id": "M202",
-        "name": "Subsonic and Supersonic Flow",
-        "description": "Understanding subsonic and supersonic aerodynamic behaviors.",
-        "course": "RS102"
-    },
-    {
-        "_id": "M203",
-        "name": "Aerodynamic Heating",
-        "description": "Study of aerodynamic heating and thermal protection systems.",
-        "course": "RS102"
-    },
-    {
-        "_id": "M301",
-        "name": "Spacecraft Structural Design",
-        "description": "Fundamentals of designing spacecraft structures and materials selection.",
-        "course": "RS103"
-    },
-    {
-        "_id": "M302",
-        "name": "Orbital Mechanics",
-        "description": "Understanding orbital dynamics and mission planning.",
-        "course": "RS103"
-    },
-    {
-        "_id": "M303",
-        "name": "Spacecraft Systems Engineering",
-        "description": "Overview of spacecraft systems and subsystems engineering.",
-        "course": "RS103"
-    }
+  {
+    "_id": "CS1234",
+    "name": "Week 1 - Course Introduction, Syllabus, Agenda",
+    "description": "Overview of the course, syllabus, and agenda.",
+    "course": "CS1234",
+    "lessons": [
+      {
+        "_id": "L101",
+        "name": "Introduction to React",
+        "description": "Basic concepts and setup for React JS.",
+        "module": "CS1234"
+      },
+      {
+        "_id": "L102",
+        "name": "React Overview",
+        "description": "An overview of React and its features.",
+        "module": "CS1234"
+      },
+      {
+        "_id": "L103",
+        "name": "Setting Up React",
+        "description": "Setting up a React development environment.",
+        "module": "CS1234"
+      },
+      {
+        "_id": "L104",
+        "name": "JSX and Components",
+        "description": "Introduction to JSX and React components.",
+        "module": "CS1234"
+      }
+    ]
+  },
+  {
+    "_id": "CS1234-2",
+    "name": "Week 2 - State and Props",
+    "description": "Understanding state and props in React.",
+    "course": "CS1234",
+    "lessons": [
+      {
+        "_id": "L201",
+        "name": "State Management",
+        "description": "Managing state in React applications.",
+        "module": "CS1234-2"
+      },
+      {
+        "_id": "L202",
+        "name": "Props and Data Flow",
+        "description": "Passing data through props and managing data flow.",
+        "module": "CS1234-2"
+      },
+      {
+        "_id": "L203",
+        "name": "Component Lifecycle",
+        "description": "Understanding the component lifecycle in React.",
+        "module": "CS1234-2"
+      },
+      {
+        "_id": "L204",
+        "name": "State and Props Integration",
+        "description": "Integrating state and props in React components.",
+        "module": "CS1234-2"
+      }
+    ]
+  },
+  {
+    "_id": "CS1235",
+    "name": "Week 1 - Course Introduction, Syllabus, Agenda",
+    "description": "Overview of the course, syllabus, and agenda.",
+    "course": "CS1235",
+    "lessons": [
+      {
+        "_id": "L201",
+        "name": "Introduction to Node.js",
+        "description": "Basic concepts and setup for Node.js.",
+        "module": "CS1235"
+      },
+      {
+        "_id": "L202",
+        "name": "Node.js Overview",
+        "description": "An overview of Node.js and its features.",
+        "module": "CS1235"
+      },
+      {
+        "_id": "L203",
+        "name": "Setting Up Node.js",
+        "description": "Installing and setting up Node.js.",
+        "module": "CS1235"
+      },
+      {
+        "_id": "L204",
+        "name": "Building a Simple Server",
+        "description": "Building a simple server with Node.js.",
+        "module": "CS1235"
+      }
+    ]
+  },
+  {
+    "_id": "CS1235-2",
+    "name": "Week 2 - Node.js Modules and Packages",
+    "description": "Using modules and packages in Node.js.",
+    "course": "CS1235",
+    "lessons": [
+      {
+        "_id": "L205",
+        "name": "Node.js Modules",
+        "description": "Understanding modules in Node.js.",
+        "module": "CS1235-2"
+      },
+      {
+        "_id": "L206",
+        "name": "npm and Packages",
+        "description": "Using npm to manage packages.",
+        "module": "CS1235-2"
+      },
+      {
+        "_id": "L207",
+        "name": "Creating a REST API",
+        "description": "Building a REST API with Node.js.",
+        "module": "CS1235-2"
+      },
+      {
+        "_id": "L208",
+        "name": "Middleware in Node.js",
+        "description": "Understanding and using middleware in Node.js.",
+        "module": "CS1235-2"
+      }
+    ]
+  },
+  {
+    "_id": "CS1236",
+    "name": "Week 1 - Course Introduction, Syllabus, Agenda",
+    "description": "Overview of the course, syllabus, and agenda.",
+    "course": "CS1236",
+    "lessons": [
+      {
+        "_id": "L301",
+        "name": "Introduction to Python",
+        "description": "Basic concepts and setup for Python programming.",
+        "module": "CS1236"
+      },
+      {
+        "_id": "L302",
+        "name": "Python Overview",
+        "description": "An overview of Python and its features.",
+        "module": "CS1236"
+      },
+      {
+        "_id": "L303",
+        "name": "Setting Up Python",
+        "description": "Installing and setting up Python.",
+        "module": "CS1236"
+      },
+      {
+        "_id": "L304",
+        "name": "Basic Python Syntax",
+        "description": "Understanding basic Python syntax.",
+        "module": "CS1236"
+      }
+    ]
+  },
+  {
+    "_id": "CS1236-2",
+    "name": "Week 2 - Python Data Structures",
+    "description": "Introduction to Python data structures.",
+    "course": "CS1236",
+    "lessons": [
+      {
+        "_id": "L305",
+        "name": "Lists and Tuples",
+        "description": "Understanding lists and tuples in Python.",
+        "module": "CS1236-2"
+      },
+      {
+        "_id": "L306",
+        "name": "Dictionaries and Sets",
+        "description": "Using dictionaries and sets in Python.",
+        "module": "CS1236-2"
+      },
+      {
+        "_id": "L307",
+        "name": "Comprehensions",
+        "description": "Using list and dictionary comprehensions.",
+        "module": "CS1236-2"
+      },
+      {
+        "_id": "L308",
+        "name": "Handling Exceptions",
+        "description": "Understanding and handling exceptions in Python.",
+        "module": "CS1236-2"
+      }
+    ]
+  },
+  {
+    "_id": "CS1237",
+    "name": "Week 1 - Course Introduction, Syllabus, Agenda",
+    "description": "Overview of the course, syllabus, and agenda.",
+    "course": "CS1237",
+    "lessons": [
+      {
+        "_id": "L401",
+        "name": "Introduction to Machine Learning",
+        "description": "Understanding the basics of machine learning.",
+        "module": "CS1237"
+      },
+      {
+        "_id": "L402",
+        "name": "Machine Learning Overview",
+        "description": "An overview of machine learning concepts and applications.",
+        "module": "CS1237"
+      },
+      {
+        "_id": "L403",
+        "name": "Supervised Learning",
+        "description": "Introduction to supervised learning algorithms.",
+        "module": "CS1237"
+      },
+      {
+        "_id": "L404",
+        "name": "Unsupervised Learning",
+        "description": "Introduction to unsupervised learning algorithms.",
+        "module": "CS1237"
+      }
+    ]
+  },
+  {
+    "_id": "CS1237-2",
+    "name": "Week 2 - Machine Learning Algorithms",
+    "description": "Overview of various machine learning algorithms.",
+    "course": "CS1237",
+    "lessons": [
+      {
+        "_id": "L405",
+        "name": "Regression Algorithms",
+        "description": "Understanding regression algorithms in machine learning.",
+        "module": "CS1237-2"
+      },
+      {
+        "_id": "L406",
+        "name": "Classification Algorithms",
+        "description": "Understanding classification algorithms in machine learning.",
+        "module": "CS1237-2"
+      },
+      {
+        "_id": "L407",
+        "name": "Clustering Algorithms",
+        "description": "Understanding clustering algorithms in machine learning.",
+        "module": "CS1237-2"
+      },
+      {
+        "_id": "L408",
+        "name": "Model Evaluation",
+        "description": "Evaluating the performance of machine learning models.",
+        "module": "CS1237-2"
+      }
+    ]
+  },
+  {
+    "_id": "CS1238",
+    "name": "Week 1 - Course Introduction, Syllabus, Agenda",
+    "description": "Overview of the course, syllabus, and agenda.",
+    "course": "CS1238",
+    "lessons": [
+      {
+        "_id": "L501",
+        "name": "Introduction to Databases",
+        "description": "An overview of databases and their types.",
+        "module": "CS1238"
+      },
+      {
+        "_id": "L502",
+        "name": "Database Fundamentals",
+        "description": "Understanding database design and management.",
+        "module": "CS1238"
+      },
+      {
+        "_id": "L503",
+        "name": "SQL Basics",
+        "description": "Introduction to SQL and basic queries.",
+        "module": "CS1238"
+      },
+      {
+        "_id": "L504",
+        "name": "Database Design",
+        "description": "Principles of database design.",
+        "module": "CS1238"
+      }
+    ]
+  },
+  {
+    "_id": "CS1238-2",
+    "name": "Week 2 - Advanced SQL",
+    "description": "Advanced SQL queries and optimization techniques.",
+    "course": "CS1238",
+    "lessons": [
+      {
+        "_id": "L505",
+        "name": "Joins and Subqueries",
+        "description": "Understanding joins and subqueries in SQL.",
+        "module": "CS1238-2"
+      },
+      {
+        "_id": "L506",
+        "name": "Indexes and Performance",
+        "description": "Using indexes to optimize database performance.",
+        "module": "CS1238-2"
+      },
+      {
+        "_id": "L507",
+        "name": "Stored Procedures and Triggers",
+        "description": "Creating and using stored procedures and triggers.",
+        "module": "CS1238-2"
+      },
+      {
+        "_id": "L508",
+        "name": "Database Security",
+        "description": "Implementing security measures in databases.",
+        "module": "CS1238-2"
+      }
+    ]
+  },
+  {
+    "_id": "CS1239",
+    "name": "Week 1 - Course Introduction, Syllabus, Agenda",
+    "description": "Overview of the course, syllabus, and agenda.",
+    "course": "CS1239",
+    "lessons": [
+      {
+        "_id": "L601",
+        "name": "Introduction to HTML & CSS",
+        "description": "Basic concepts of HTML and CSS for web development.",
+        "module": "CS1239"
+      },
+      {
+        "_id": "L602",
+        "name": "HTML Overview",
+        "description": "Basic structure and elements of HTML.",
+        "module": "CS1239"
+      },
+      {
+        "_id": "L603",
+        "name": "CSS Overview",
+        "description": "Basic concepts of CSS for styling web pages.",
+        "module": "CS1239"
+      },
+      {
+        "_id": "L604",
+        "name": "Responsive Design",
+        "description": "Creating responsive web designs with CSS.",
+        "module": "CS1239"
+      }
+    ]
+  },
+  {
+    "_id": "CS1239-2",
+    "name": "Week 2 - Advanced HTML & CSS",
+    "description": "Advanced techniques in HTML and CSS for web development.",
+    "course": "CS1239",
+    "lessons": [
+      {
+        "_id": "L605",
+        "name": "Flexbox",
+        "description": "Using Flexbox for layout in CSS.",
+        "module": "CS1239-2"
+      },
+      {
+        "_id": "L606",
+        "name": "Grid Layout",
+        "description": "Creating complex layouts with CSS Grid.",
+        "module": "CS1239-2"
+      },
+      {
+        "_id": "L607",
+        "name": "CSS Animations",
+        "description": "Adding animations to web pages using CSS.",
+        "module": "CS1239-2"
+      },
+      {
+        "_id": "L608",
+        "name": "Forms and Validation",
+        "description": "Creating and validating forms with HTML and CSS.",
+        "module": "CS1239-2"
+      }
+    ]
+  },
+  {
+    "_id": "CS1240",
+    "name": "Week 1 - Course Introduction, Syllabus, Agenda",
+    "description": "Overview of the course, syllabus, and agenda.",
+    "course": "CS1240",
+    "lessons": [
+      {
+        "_id": "L701",
+        "name": "Introduction to JavaScript",
+        "description": "Basic concepts and setup for JavaScript programming.",
+        "module": "CS1240"
+      },
+      {
+        "_id": "L702",
+        "name": "JavaScript Overview",
+        "description": "Understanding the basics of JavaScript.",
+        "module": "CS1240"
+      },
+      {
+        "_id": "L703",
+        "name": "JavaScript Syntax",
+        "description": "Basic syntax and features of JavaScript.",
+        "module": "CS1240"
+      },
+      {
+        "_id": "L704",
+        "name": "JavaScript DOM Manipulation",
+        "description": "Manipulating the DOM using JavaScript.",
+        "module": "CS1240"
+      }
+    ]
+  },
+  {
+    "_id": "CS1240-2",
+    "name": "Week 2 - Advanced JavaScript",
+    "description": "Advanced concepts and features in JavaScript programming.",
+    "course": "CS1240",
+    "lessons": [
+      {
+        "_id": "L705",
+        "name": "Asynchronous JavaScript",
+        "description": "Understanding asynchronous programming in JavaScript.",
+        "module": "CS1240-2"
+      },
+      {
+        "_id": "L706",
+        "name": "Promises",
+        "description": "Using promises for asynchronous operations.",
+        "module": "CS1240-2"
+      },
+      {
+        "_id": "L707",
+        "name": "Async/Await",
+        "description": "Simplifying asynchronous code with async/await.",
+        "module": "CS1240-2"
+      },
+      {
+        "_id": "L708",
+        "name": "JavaScript Modules",
+        "description": "Using modules to organize JavaScript code.",
+        "module": "CS1240-2"
+      }
+    ]
+  },
+  {
+    "_id": "CS1241",
+    "name": "Week 1 - Course Introduction, Syllabus, Agenda",
+    "description": "Overview of the course, syllabus, and agenda.",
+    "course": "CS1241",
+    "lessons": [
+      {
+        "_id": "L801",
+        "name": "Introduction to Cloud Computing",
+        "description": "Basics of cloud computing and AWS.",
+        "module": "CS1241"
+      },
+      {
+        "_id": "L802",
+        "name": "Cloud Computing Overview",
+        "description": "Introduction to cloud computing concepts.",
+        "module": "CS1241"
+      },
+      {
+        "_id": "L803",
+        "name": "AWS Basics",
+        "description": "Getting started with AWS services.",
+        "module": "CS1241"
+      },
+      {
+        "_id": "L804",
+        "name": "Deploying Applications on AWS",
+        "description": "Deploying web applications on AWS.",
+        "module": "CS1241"
+      }
+    ]
+  },
+  {
+    "_id": "CS1241-2",
+    "name": "Week 2 - Advanced Cloud Computing",
+    "description": "Advanced concepts and features in cloud computing.",
+    "course": "CS1241",
+    "lessons": [
+      {
+        "_id": "L805",
+        "name": "Cloud Storage",
+        "description": "Understanding cloud storage solutions and services.",
+        "module": "CS1241-2"
+      },
+      {
+        "_id": "L806",
+        "name": "Serverless Computing",
+        "description": "Introduction to serverless computing and AWS Lambda.",
+        "module": "CS1241-2"
+      },
+      {
+        "_id": "L807",
+        "name": "Cloud Security",
+        "description": "Implementing security best practices in cloud environments.",
+        "module": "CS1241-2"
+      },
+      {
+        "_id": "L808",
+        "name": "Monitoring and Optimization",
+        "description": "Monitoring and optimizing cloud applications.",
+        "module": "CS1241-2"
+      }
+    ]
+  }
 ]

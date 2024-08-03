@@ -7,12 +7,13 @@ export default function TemplateLiterals() {
     const loggedIn = false;
     const greeting2 = `Logged in: ${loggedIn ? "Yes" : "No"}`;
     return (
-        <div id="wd-template-literals">
-            <h4>Template Literals</h4>
-            result1 = {result1}     <br />
-            result2 = {result2}     <br />
-            greeting1 = {greeting1} <br />
-            greeting2 = {greeting2} <hr />
-        </div>
+      <div id="wd-template-literals">
+        <h4>Template Literals</h4>
+        result1 = {result1}     <br />
+        result2 = {result2}     <br />
+        greeting1 = {greeting1} <br />
+        greeting2 = {greeting2} <hr />
+      </div>
     );
-}
+  }
+  

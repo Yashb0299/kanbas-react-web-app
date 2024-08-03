@@ -1,97 +1,130 @@
 import React from "react";
-import {BsFillGearFill, BsFunnel} from "react-icons/bs";
-import {BiImport} from "react-icons/bi";
-import {LiaFileImportSolid} from "react-icons/lia";
-import {assignments, enrollments, grades, users} from "../../Database"
-import {useParams} from "react-router";
+import {
+  FaFileImport,
+  FaFileExport,
+  FaCog,
+  FaSearch,
+  FaChevronDown,
+} from "react-icons/fa";
+import { Table, InputGroup, FormControl, Button } from "react-bootstrap";
+import { useParams } from "react-router";
+import * as db from "../../Database";
 
 export default function Grades() {
-    const {cid} = useParams();
+  const { cid } = useParams();
+  const enrollments = db.enrollments.filter(
+    (enrollment) => enrollment.course === cid
+  );
+  const assignments = db.assignments.filter(
+    (assignment) => assignment.course === cid
+  );
+  const users = db.users;
+  const grades = db.grades;
 
-    const student_ids = enrollments.filter((enrollment) => enrollment.course === cid);
+  const getStudentName = (studentId: string) => {
+    const student = users.find((user) => user._id === studentId);
+    return student ? `${student.firstName} ${student.lastName}` : "";
+  };
 
-    const students = student_ids.map((student_id) => users.find((user) => user._id === student_id.user));
-
-    const assignments_list = assignments.filter((assignment) => assignment.course === cid);
-
-    const grades_list = students.map((student) => {
-        const student_grades = assignments_list.map((assignment) => {
-            const grade = grades.find((grade) => grade.assignment === assignment._id && grade.student === student?._id);
-            return grade ? grade.grade : "N/A"
-        });
-        return {
-            ...student,
-            grades: student_grades
-        }
-    });
-
-    return (
-        <div className="container">
-            <button className="btn btn-secondary float-end">
-                <BsFillGearFill className="fs-5"/>
-            </button>
-            <button className="btn btn-secondary float-end mx-2 dropdown-toggle">
-                <BiImport className="me-2 fs-5"/>
-                Export
-            </button>
-            <button className="btn btn-secondary float-end">
-                <LiaFileImportSolid className="me-2 fs-5"/>
-                Import
-            </button>
-            <br/>
-            <div className="row mt-4">
-                <div className="col">
-                    <label htmlFor="wd-student-names" className="form-label"><b>Student Names</b></label>
-                    <select id="wd-student-names" className="form-select">
-                        <option selected>Search Students</option>
-                    </select>
-                </div>
-                <div className="col">
-                    <label htmlFor="wd-assignment-names" className="form-label"><b>Assignment Names</b></label>
-                    <select id="wd-assignment-names" className="form-select">
-                        <option selected>Search Assignments</option>
-                    </select>
-                </div>
-            </div>
-            <div className="row my-3 row-cols-auto">
-                <button className="btn btn-secondary ms-2">
-                    <BsFunnel className="me-2"/>
-                    Apply Filters
-                </button>
-            </div>
-            <div className="row my-3">
-                <div className="table-responsive">
-                    <table className="table table-striped table-bordered align-middle">
-                        <thead>
-                        <tr>
-                            <th scope="col" className="fs-6 fw-normal" style={{width: "20%"}}>Student Name</th>
-                            {
-                                assignments_list && assignments_list.map((assignment) => (
-                                    <th scope="col" className="fs-6 fw-normal text-center" style={{width: "20%"}}>
-                                        {assignment.title}<br/>
-                                        Out of {assignment.points}
-                                    </th>
-                                ))
-                            }
-                        </tr>
-                        </thead>
-                        <tbody>
-                        {
-                            grades_list && grades_list.map((student) => (
-                                <tr>
-                                    <th scope="row" className="text-danger">{student.firstName + " " + student.lastName}</th>
-                                    {
-                                        student.grades && student.grades.map((grade) => (
-                                            <td className="text-center">{grade}</td>
-                                        ))
-                                    }
-                                </tr>
-                            ))
-                        }
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+  const getGrade = (studentId: string, assignmentId: string) => {
+    const grade = grades.find(
+      (grade) =>
+        grade.student === studentId && grade.assignment === assignmentId
     );
+    return grade ? `${grade.grade}%` : "N/A";
+  };
+
+  return (
+    <div className="container mt-3">
+      <div className="d-flex justify-content-between mb-3">
+        <div className="d-flex">
+          <div className="me-3">
+            <label>
+              <b>Student Names</b>
+            </label>
+            <InputGroup>
+              <Button variant="outline-secondary">
+                <FaSearch />
+              </Button>
+              <FormControl
+                placeholder="Search Students"
+                className="form-control"
+              />
+              <Button variant="outline-secondary">
+                <FaChevronDown />
+              </Button>
+            </InputGroup>
+          </div>
+        </div>
+        <div className="d-flex align-items-start">
+          <div className="me-3">
+            <label>
+              <b>Assignment Names</b>
+            </label>
+            <InputGroup>
+              <Button variant="outline-secondary">
+                <FaSearch />
+              </Button>
+              <FormControl
+                placeholder="Search Assignments"
+                className="form-control"
+              />
+              <Button variant="outline-secondary">
+                <FaChevronDown />
+              </Button>
+            </InputGroup>
+          </div>
+          <Button
+            variant="outline-secondary"
+            className="me-2 d-flex align-items-center"
+          >
+            <FaFileImport className="me-1" /> Import
+          </Button>
+          <Button
+            variant="outline-secondary"
+            className="me-2 d-flex align-items-center"
+          >
+            <FaFileExport className="me-1" /> Export
+          </Button>
+          <Button
+            variant="outline-secondary"
+            className="d-flex align-items-center"
+          >
+            <FaCog />
+          </Button>
+        </div>
+      </div>
+
+      <div className="table-responsive">
+        <Table striped bordered hover>
+          <thead>
+            <tr>
+              <th>Student Name</th>
+              {assignments.map((assignment) => (
+                <th key={assignment._id}>
+                  {assignment.title}
+                  <br />
+                  Out of 100
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {enrollments.map((enrollment) => (
+              <tr key={enrollment.user}>
+                <td className="text-danger">
+                  {getStudentName(enrollment.user)}
+                </td>
+                {assignments.map((assignment) => (
+                  <td key={assignment._id}>
+                    {getGrade(enrollment.user, assignment._id)}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </Table>
+      </div>
+    </div>
+  );
 }

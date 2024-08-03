@@ -1,92 +1,218 @@
 [
-    {
-        "_id": "A101",
-        "title": "Propulsion Assignment",
-        "course": "RS101",
-        "points": 100,
-        "description": "The assignment is available online Submit a link to the landing page of your Web application running on Netlify. The landing page should include the following:Your full name and section Links to each of the lab assignments Link to the Kanbas application Links to all relevant source code repositories The Kanbas application should include a link to navigate back to the landing page.",
-        "due": "2024-05-27",
-        "available": "2024-05-20",
-        "until": "2024-05-27"
-    },
-    {
-        "_id": "A102",
-        "title": "Combustion Analysis",
-        "course": "RS101",
-        "points": 100,
-        "description": "The assignment is available online Submit a link to the landing page of your Web application running on Netlify. The landing page should include the following:Your full name and section Links to each of the lab assignments Link to the Kanbas application Links to all relevant source code repositories The Kanbas application should include a link to navigate back to the landing page.",
-        "due": "2024-05-27",
-        "available": "2024-05-20",
-        "until": "2024-05-27"
-    },
-    {
-        "_id": "A103",
-        "title": "Nozzle Design Project",
-        "course": "RS101",
-        "description": "The assignment is available online Submit a link to the landing page of your Web application running on Netlify. The landing page should include the following:Your full name and section Links to each of the lab assignments Link to the Kanbas application Links to all relevant source code repositories The Kanbas application should include a link to navigate back to the landing page.",
-        "points": 100,
-        "due": "2024-05-27",
-        "available": "2024-05-20",
-        "until": "2024-05-27"
-    },
-    {
-        "_id": "A201",
-        "title": "Aerodynamics Quiz",
-        "course": "RS102",
-        "description": "The assignment is available online Submit a link to the landing page of your Web application running on Netlify. The landing page should include the following:Your full name and section Links to each of the lab assignments Link to the Kanbas application Links to all relevant source code repositories The Kanbas application should include a link to navigate back to the landing page.",
-        "points": 100,
-        "due": "2024-05-27",
-        "available": "2024-05-20",
-        "until": "2024-05-27"
-    },
-    {
-        "_id": "A202",
-        "title": "Flow Analysis",
-        "description": "The assignment is available online Submit a link to the landing page of your Web application running on Netlify. The landing page should include the following:Your full name and section Links to each of the lab assignments Link to the Kanbas application Links to all relevant source code repositories The Kanbas application should include a link to navigate back to the landing page.",
-        "course": "RS102",
-        "points": 100,
-        "due": "2024-05-27",
-        "available": "2024-05-20",
-        "until": "2024-05-27"
-    },
-    {
-        "_id": "A203",
-        "title": "Heating Analysis",
-        "description": "The assignment is available online Submit a link to the landing page of your Web application running on Netlify. The landing page should include the following:Your full name and section Links to each of the lab assignments Link to the Kanbas application Links to all relevant source code repositories The Kanbas application should include a link to navigate back to the landing page.",
-        "course": "RS102",
-        "points": 100,
-        "due": "2024-05-27",
-        "available": "2024-05-20",
-        "until": "2024-05-27"
-    },
-    {
-        "_id": "A301",
-        "title": "Structural Design Task",
-        "description": "The assignment is available online Submit a link to the landing page of your Web application running on Netlify. The landing page should include the following:Your full name and section Links to each of the lab assignments Link to the Kanbas application Links to all relevant source code repositories The Kanbas application should include a link to navigate back to the landing page.",
-        "course": "RS103",
-        "points": 100,
-        "due": "2024-05-27",
-        "available": "2024-05-20",
-        "until": "2024-05-27"
-    },
-    {
-        "_id": "A302",
-        "title": "Orbital Calculations",
-        "description": "The assignment is available online Submit a link to the landing page of your Web application running on Netlify. The landing page should include the following:Your full name and section Links to each of the lab assignments Link to the Kanbas application Links to all relevant source code repositories The Kanbas application should include a link to navigate back to the landing page.",
-        "course": "RS103",
-        "points": 100,
-        "due": "2024-05-27",
-        "available": "2024-05-20",
-        "until": "2024-05-27"
-    },
-    {
-        "_id": "A303",
-        "title": "Systems Engineering Exam",
-        "description": "The assignment is available online Submit a link to the landing page of your Web application running on Netlify. The landing page should include the following:Your full name and section Links to each of the lab assignments Link to the Kanbas application Links to all relevant source code repositories The Kanbas application should include a link to navigate back to the landing page.",
-        "course": "RS103",
-        "points": 100,
-        "due": "2024-05-27",
-        "available": "2024-05-20",
-        "until": "2024-05-27"
-    }
+  {
+    "_id": "A401",
+    "title": "React Components Assignment",
+    "course": "CS1234",
+    "availableDate": "May 6",
+    "dueDate": "May 13",
+    "availableUntil": "May 14",
+    "description": "Create and render reusable React components. This assignment focuses on the fundamental concepts of creating and managing React components, including state and props, and how to pass data between them."
+  },
+  {
+    "_id": "A402",
+    "title": "State and Props Quiz",
+    "course": "CS1234",
+    "availableDate": "May 13",
+    "dueDate": "May 20",
+    "availableUntil": "May 21",
+    "description": "Test your understanding of state and props in React. This quiz covers key concepts such as state management, prop drilling, and the use of functional and class components."
+  },
+  {
+    "_id": "A403",
+    "title": "React Project",
+    "course": "CS1234",
+    "availableDate": "May 20",
+    "dueDate": "May 27",
+    "availableUntil": "May 28",
+    "description": "Develop a full-fledged React application. This project combines everything you've learned about React, including components, state, props, and routing, into a comprehensive application."
+  },
+  {
+    "_id": "A501",
+    "title": "Node.js Basics Assignment",
+    "course": "CS1235",
+    "availableDate": "May 6",
+    "dueDate": "May 13",
+    "availableUntil": "May 14",
+    "description": "Learn the basics of Node.js. This assignment covers fundamental Node.js concepts such as module system, asynchronous programming, and building simple HTTP servers."
+  },
+  {
+    "_id": "A502",
+    "title": "REST API Development",
+    "course": "CS1235",
+    "availableDate": "May 13",
+    "dueDate": "May 20",
+    "availableUntil": "May 21",
+    "description": "Build a RESTful API using Node.js and Express. This assignment focuses on creating CRUD operations, middleware integration, and handling different HTTP methods."
+  },
+  {
+    "_id": "A503",
+    "title": "Middleware Integration",
+    "course": "CS1235",
+    "availableDate": "May 20",
+    "dueDate": "May 27",
+    "availableUntil": "May 28",
+    "description": "Integrate middleware into your Node.js application. This assignment covers the use of middleware for logging, authentication, error handling, and more."
+  },
+  {
+    "_id": "A601",
+    "title": "Python Syntax Assignment",
+    "course": "CS1236",
+    "availableDate": "May 6",
+    "dueDate": "May 13",
+    "availableUntil": "May 14",
+    "description": "Get familiar with Python syntax. This assignment covers basic Python constructs such as variables, data types, control structures, functions, and error handling."
+  },
+  {
+    "_id": "A602",
+    "title": "Data Structures Quiz",
+    "course": "CS1236",
+    "availableDate": "May 13",
+    "dueDate": "May 20",
+    "availableUntil": "May 21",
+    "description": "Test your knowledge of Python data structures. This quiz includes questions on lists, dictionaries, sets, tuples, and how to manipulate them."
+  },
+  {
+    "_id": "A603",
+    "title": "Python Project",
+    "course": "CS1236",
+    "availableDate": "May 20",
+    "dueDate": "May 27",
+    "availableUntil": "May 28",
+    "description": "Create a Python application. This project combines your knowledge of Python syntax, data structures, and algorithms to build a functional Python application."
+  },
+  {
+    "_id": "A701",
+    "title": "Supervised Learning Assignment",
+    "course": "CS1237",
+    "availableDate": "May 6",
+    "dueDate": "May 13",
+    "availableUntil": "May 14",
+    "description": "Apply supervised learning techniques using Python and TensorFlow. This assignment includes tasks on regression, classification, and model evaluation."
+  },
+  {
+    "_id": "A702",
+    "title": "Model Evaluation Quiz",
+    "course": "CS1237",
+    "availableDate": "May 13",
+    "dueDate": "May 20",
+    "availableUntil": "May 21",
+    "description": "Quiz on evaluating machine learning models. Topics include precision, recall, F1 score, ROC curves, and confusion matrices."
+  },
+  {
+    "_id": "A703",
+    "title": "Machine Learning Project",
+    "course": "CS1237",
+    "availableDate": "May 20",
+    "dueDate": "May 27",
+    "availableUntil": "May 28",
+    "description": "Build a machine learning model. This project involves data preprocessing, model training, evaluation, and deployment using Python and TensorFlow."
+  },
+  {
+    "_id": "A801",
+    "title": "SQL Queries Assignment",
+    "course": "CS1238",
+    "availableDate": "May 6",
+    "dueDate": "May 13",
+    "availableUntil": "May 14",
+    "description": "Write complex SQL queries. This assignment covers SELECT statements, joins, subqueries, and aggregate functions."
+  },
+  {
+    "_id": "A802",
+    "title": "Database Design Quiz",
+    "course": "CS1238",
+    "availableDate": "May 13",
+    "dueDate": "May 20",
+    "availableUntil": "May 21",
+    "description": "Quiz on database design principles. Topics include normalization, ER diagrams, and relational schema design."
+  },
+  {
+    "_id": "A803",
+    "title": "Advanced SQL Project",
+    "course": "CS1238",
+    "availableDate": "May 20",
+    "dueDate": "May 27",
+    "availableUntil": "May 28",
+    "description": "Develop an advanced SQL-based application. This project involves designing a database schema, writing complex queries, and optimizing performance."
+  },
+  {
+    "_id": "A901",
+    "title": "HTML Structure Assignment",
+    "course": "CS1239",
+    "availableDate": "May 6",
+    "dueDate": "May 13",
+    "availableUntil": "May 14",
+    "description": "Create the structure of a web page using HTML. This assignment covers elements, attributes, forms, and semantic HTML."
+  },
+  {
+    "_id": "A902",
+    "title": "CSS Styling Quiz",
+    "course": "CS1239",
+    "availableDate": "May 13",
+    "dueDate": "May 20",
+    "availableUntil": "May 21",
+    "description": "Test your CSS skills. This quiz includes questions on selectors, properties, box model, and responsive design."
+  },
+  {
+    "_id": "A903",
+    "title": "Responsive Design Project",
+    "course": "CS1239",
+    "availableDate": "May 20",
+    "dueDate": "May 27",
+    "availableUntil": "May 28",
+    "description": "Build a responsive web page. This project involves using CSS and media queries to create a web page that looks good on all devices."
+  },
+  {
+    "_id": "A1001",
+    "title": "JavaScript Basics Assignment",
+    "course": "CS1240",
+    "availableDate": "May 6",
+    "dueDate": "May 13",
+    "availableUntil": "May 14",
+    "description": "Learn the basics of JavaScript. This assignment covers variables, data types, functions, and basic DOM manipulation."
+  },
+  {
+    "_id": "A1002",
+    "title": "DOM Manipulation Quiz",
+    "course": "CS1240",
+    "availableDate": "May 13",
+    "dueDate": "May 20",
+    "availableUntil": "May 21",
+    "description": "Quiz on JavaScript DOM manipulation. Topics include selecting elements, event handling, and dynamic content updates."
+  },
+  {
+    "_id": "A1003",
+    "title": "JavaScript Project",
+    "course": "CS1240",
+    "availableDate": "May 20",
+    "dueDate": "May 27",
+    "availableUntil": "May 28",
+    "description": "Build a JavaScript application. This project combines everything you've learned about JavaScript, including DOM manipulation, event handling, and API interaction."
+  },
+  {
+    "_id": "A1101",
+    "title": "AWS Setup Assignment",
+    "course": "CS1241",
+    "availableDate": "May 6",
+    "dueDate": "May 13",
+    "availableUntil": "May 14",
+    "description": "Set up AWS services. This assignment covers the basics of setting up AWS EC2 instances, S3 buckets, and configuring IAM roles."
+  },
+  {
+    "_id": "A1102",
+    "title": "Cloud Security Quiz",
+    "course": "CS1241",
+    "availableDate": "May 13",
+    "dueDate": "May 20",
+    "availableUntil": "May 21",
+    "description": "Quiz on cloud security principles. Topics include IAM policies, security groups, and best practices for securing AWS resources."
+  },
+  {
+    "_id": "A1103",
+    "title": "Cloud Computing Project",
+    "course": "CS1241",
+    "availableDate": "May 20",
+    "dueDate": "May 27",
+    "availableUntil": "May 28",
+    "description": "Develop a cloud-based application. This project involves using AWS services to deploy a scalable and secure application."
+  }
 ]

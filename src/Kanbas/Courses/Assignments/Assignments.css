@@ -1,0 +1,10 @@
+.text-decoration-none {
+    text-decoration: none !important;
+  }
+
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

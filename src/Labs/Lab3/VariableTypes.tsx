@@ -7,15 +7,16 @@ export default function VariableTypes() {
     let isString = typeof stringVariable;
     let isBoolean = typeof booleanVariable;
     return(
-        <div id="wd-variable-types">
-            <h4>Variables Types</h4>
-            numberVariable = { numberVariable }<br/>
-            floatingPointNumber = { floatingPointNumber }<br/>
-            stringVariable = { stringVariable }<br/>
-            booleanVariable = { booleanVariable + "" }<br/>
-            isNumber = { isNumber }<br/>
-            isString = { isString }<br/>
-            isBoolean = { isBoolean }<hr/>
-        </div>
+      <div id="wd-variable-types">
+        <h4>Variables Types</h4>
+        numberVariable = { numberVariable }<br/>
+        floatingPointNumber = { floatingPointNumber }<br/>
+        stringVariable = { stringVariable }<br/>
+        booleanVariable = { booleanVariable + "" }<br/>
+        isNumber = { isNumber }<br/>
+        isString = { isString }<br/>
+        isBoolean = { isBoolean }<hr/>
+      </div>
     );
-}
+  }
+  

@@ -1,3 +1,4 @@
+import React from "react";
 import ClickEvent from "./ClickEvent";
 import PassingDataOnEvent from "./PassingDataOnEvent";
 import PassingFunctions from "./PassingFunctions";
@@ -11,28 +12,26 @@ import ArrayStateVariable from "./ArrayStateVariable";
 import ParentStateComponent from "./ParentStateComponent";
 import ReduxExamples from "./ReduxExamples";
 
-
 export default function Lab4() {
-    function sayHello() {
-        alert("Hello");
-    }
+  function sayHello() {
+    alert("Hello");
+  }
 
-    return (
-        <div id="wd-passing-functions" className="container-fluid">
-            <h2>Lab 4</h2>
-            <ClickEvent></ClickEvent>
-            <PassingDataOnEvent></PassingDataOnEvent>
-            <PassingFunctions theFunction={sayHello}/>
-            <EventObject></EventObject>
-            <Counter></Counter>
-            <BooleanStateVariables></BooleanStateVariables>
-            <StringStateVariables></StringStateVariables>
-            <DateStateVariable></DateStateVariable>
-            <ObjectStateVariable></ObjectStateVariable>
-            <ArrayStateVariable></ArrayStateVariable>
-            <ParentStateComponent></ParentStateComponent>
-            <ReduxExamples></ReduxExamples>
-        </div>
-    );
+  return (
+    <div>
+      <h1>Lab 4</h1>
+      <ClickEvent />
+      <PassingDataOnEvent />
+      <PassingFunctions theFunction={sayHello} />
+      <EventObject />
+      <Counter />
+      <BooleanStateVariables />
+      <StringStateVariables />
+      <DateStateVariable />
+      <ObjectStateVariable />
+      <ArrayStateVariable />
+      <ParentStateComponent />
+      <ReduxExamples />
+    </div>
+  );
 }
-

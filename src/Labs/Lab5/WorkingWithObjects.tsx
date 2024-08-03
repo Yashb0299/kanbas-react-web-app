@@ -50,7 +50,7 @@ export default function WorkingWithObjects() {
 			       onChange={e=>setAssignment({...assignment, title:e.target.value})}/>			
 			<hr/>
 			<a id ="wd-update_assignment-score"
-			   className="btn btn-primary  float-end "
+			   className="btn btn-primary float-end "
 			   href={`${ASSIGNMENT_API_URL}/score/${assignment.score}`}>
 			   Update Score
 			</a>
@@ -60,8 +60,8 @@ export default function WorkingWithObjects() {
 			       onChange={e=>setAssignment({...assignment, score:e.target.value})}/>			
 			<hr/>
 			<a id ="wd-update_assignment-score"
-			   className="btn btn-primary  float-end w-25"
-			   href={`${ASSIGNMENT_API_URL}/complete/${assignment.complete}`}>
+			   className="btn btn-primary float-end w-25"
+			   href={`${ASSIGNMENT_API_URL}/completed/${assignment.complete}`}>
 			   Update Complete
 			</a>
 			<input className="form-check-input "
@@ -94,7 +94,7 @@ export default function WorkingWithObjects() {
 			</a>
 			<hr/>
 			<a id ="wd-update_assignment-title"
-			   className="btn btn-primary  float-end w-25"
+			   className="btn btn-primary float-end w-25"
 			   href={`${REMOTE_SERVER}/lab5/module/name/${module.name}`}>
 			   Update Module Name
 			</a>

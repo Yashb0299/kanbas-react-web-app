@@ -17,7 +17,6 @@ export default function QuizDetails(
     const navigateToQuizList = () => {
         navigate(`/Kanbas/Courses/${cid}/Quizzes`);
     };
-
     const saveQuiz = async () => {
         try {
             if (quiz !== undefined && quiz !== null) {

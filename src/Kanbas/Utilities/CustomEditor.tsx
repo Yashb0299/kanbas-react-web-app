@@ -20,7 +20,6 @@ const CustomEditor = () => {
                 <button onClick={() => execCommand('bold')} role="button" className='fw-semibold fs-4 btn'>B</button>
                 <button onClick={() => execCommand('italic')} role="button" className='fst-italic fs-4 btn'>I</button>
                 <button onClick={() => execCommand('underline')} role="button" className='fs-4 btn'><u>U</u></button>
-                {/* Add more buttons for other commands */}
             </div>
             <div className="form-control" 
                 ref={editorRef}
